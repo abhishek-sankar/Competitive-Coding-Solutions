@@ -1,3 +1,94 @@
+/*
+Bad-virus is a highly contagious virus that can seriously complicate people’s health. This virus is only spread from person to person and the only way to prevent infection (not 100\%100% safe) is by wearing masks.
+
+Chief of epidemiology has received the first case of bad-virus in your country, this case is imported from the other country. In this context, in coordination with the president, it was decided to close the country's borders, prohibit encounters of more than two persons and make the use of masks mandatory. But in order not to affect the economy, no type of quarantine will be carried out.
+
+Two days later, Chief of epidemiology has been notified about the second case of bad-virus (now necessarily is a national case). Knowing that there are NN persons in the country (including the imported case) enumerated by an integer from 1 to NN, they ask you to identify all people who necessarily are infected. For this task, the department of epidemiology provides you with a list of the MM encounters of two persons during this time. You will be given QQ scenarios that you should handle separately. In the ii-th scenario, you will be given the IDs of the first and the second case of bad-virus, and you should count how many people that can be 100\%100% identified as infected (including the first and the second case).
+
+
+Standard input
+The first line contains two integers NN and MM, denoting the number of persons and number of encounters respectively.
+
+Each one of the next MM lines contains two different integers A_iA
+​i
+​​  and B_iB
+​i
+​​ , denoting the two persons in the encounter (there aren't two equal pairs of integers).
+
+The next line contains an integer QQ, denoting the number of scenarios.
+
+Each one of the next QQ lines contains two different integers F_iF
+​i
+​​  and S_iS
+​i
+​​ , denoting the first and second case of bad-virus in the ii-th scenario.
+
+
+Standard output
+For each scenario, output the number of people that can be 100\%100% identified as infected on a single line.
+
+
+Constraints and notes
+2 \leq N \leq 10^{5}2≤N≤10
+​5
+​​ 
+1 \leq M, Q \leq 2 \times 10^{5}1≤M,Q≤2×10
+​5
+​​ 
+1 \leq A_i \lt B_i \leq N1≤A
+​i
+​​ <B
+​i
+​​ ≤N for all 1 \leq i \leq M1≤i≤M
+A_i \ne A_jA
+​i
+​​ ≠A
+​j
+​​  or B_i \ne B_jB
+​i
+​​ ≠B
+​j
+​​  for all 1 \leq i < j \leq M1≤i<j≤M
+1 \leq F_i, S_i \leq N1≤F
+​i
+​​ ,S
+​i
+​​ ≤N and F_i \ne S_iF
+​i
+​​ ≠S
+​i
+​​  for all 1 \leq i \leq Q1≤i≤Q
+For each scenario, it is guaranteed that there is at least a sequence of encounters so that the second case is originally infected from the first case.
+
+For 30\%30% of the test data, N \leq 100N≤100 and M, Q \leq 200M,Q≤200.
+For 60\%60% of the test data, N \leq 1\,000N≤1000 and M, Q \leq 2\,000M,Q≤2000.
+
+Input	Output	Explanation
+6 5
+1 2
+1 3
+2 4
+3 4
+4 5
+2
+1 5
+4 3
+3
+2
+Below is the illustration of the encounters.
+
+
+In the first scenario, there are only two ways such that the fifth person can be infected by the first person, i.e. 1 \rightarrow 2 \rightarrow 4 \rightarrow 51→2→4→5 and 1 \rightarrow 3 \rightarrow 4 \rightarrow 51→3→4→5. We cannot identify which one of the second and the third person that is actually infected. So, the people that can be 100\%100% identified as infected are 11, 44, and 55.
+
+In the second scenario, the people that can be 100\%100% identified as infected are 33 and 44.
+
+
+
+C++
+
+
+
+*/
 // C++ program to print all paths 
 // from a source to destination. 
 #include <bits/stdc++.h> 
