@@ -1,4 +1,4 @@
-#### This folder has the solutions to the challenges by our team (@ebby7 and @jacob13400 and @nullpointxr) in IEEE Xtreme'14 (2020)
+#### This folder has the solutions to the challenges by our team ([@abrahamfrancis](https://github.com/abrahamfrancis), [@jacob13400](https://github.com/jacob13400) and [@nullpointxr](https://github.com/nullpointxr)) in IEEE Xtreme'14 (2020)
 
 * [coin_collector.cpp](coins.cpp)
 * [coupon_codes.cpp](crafting_wooden_tools.cpp)
