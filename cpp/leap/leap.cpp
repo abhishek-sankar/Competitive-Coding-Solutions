@@ -1,15 +1,13 @@
 #include "leap.h"
 
 namespace leap {
-	int is_leap_year(int year){
-		if(year%4==0){
-			if(year%100==0 && year%400!=0){
-				return false;
-			}else{
-				return true;
-			}
-		}else{
-			return false;
-		}
+	bool is_leap_year(int year){
+		return year%4==0 && (year%100!=0 || year%400==0);
 	}
 }  // namespace leap
+/*
+This helped me understand how to use namespaces: 
+https://stackoverflow.com/questions/10492847/c-namespace-functions
+*/
+
+
