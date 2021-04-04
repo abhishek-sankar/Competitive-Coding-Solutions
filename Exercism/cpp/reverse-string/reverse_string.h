@@ -1,4 +1,5 @@
-#include "string"
+#include "string" // need string type
+#include "algorithm" // need reverse()
 #if !defined(REVERSE_STRING_H)
 #define REVERSE_STRING_H
 
