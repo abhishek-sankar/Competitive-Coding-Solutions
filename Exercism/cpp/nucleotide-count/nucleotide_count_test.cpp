@@ -7,13 +7,11 @@ TEST_CASE("has_no_nucleotides")
 {
     const nucleotide_count::counter dna("");
     const std::map<char, int> expected{ {'A', 0}, {'T', 0}, {'C', 0}, {'G', 0} };
-
     const auto actual = dna.nucleotide_counts();
 
     REQUIRE(expected == actual);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("has_no_adenosine")
 {
     const nucleotide_count::counter dna("");
@@ -75,4 +73,5 @@ TEST_CASE("counts_all_nucleotides")
 
     REQUIRE(expected == actual);
 }
+#if defined(EXERCISM_RUN_ALL_TESTS)
 #endif
