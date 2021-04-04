@@ -3,6 +3,7 @@ package space
 // Source: exercism/problem-specifications
 // Commit: 28b3dac0 space-age: restrict seconds to fit within 32-bit int range
 // Problem Specifications Version: 1.2.0
+type Planet string
 
 var testCases = []struct {
 	description string

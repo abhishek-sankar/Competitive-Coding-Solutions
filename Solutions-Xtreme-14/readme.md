@@ -4,7 +4,7 @@
 * [coupon_codes.cpp](crafting_wooden_tools.cpp)
 * [crafting_wooden_tools.cpp](crafting_wooden_tools.cpp)
 * [furin_back.cpp](furin_back.cpp)
-*  [hotel_wiring.cpp](hotel_wiring.cpp)
+* [hotel_wiring.cpp](hotel_wiring.cpp)
 * [ieee_xplore_indexing.cpp](ieee_xplore_indexing.cpp)
 * [infections.cpp](infections.cpp)
 * [linear_separation_2.cpp](linear_separation_2.cpp)

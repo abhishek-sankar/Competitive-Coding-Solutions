@@ -1,0 +1,6 @@
+- [Checkpoint 3](./checkpoint_3.cpp)
+- [Implement power function](./implement_power_function.cpp)
+- [Rotated array search](./rotated_array_search.cpp)
+- [Search for a range](./search_for_a_range.cpp)
+- [Square root of an integer](./square_root_of_an_integer.cpp)
+- [Go back](../Readme.md)
