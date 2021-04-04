@@ -5,7 +5,7 @@
   - [Exercism Solutions](./Exercism/readme.md)
   - [HackerRank Solutions](./HackerRank/readme.md)
   - [InterviewBit Solutions](./Interviewbit/readme.md)
-  - [IEEE Xtreme'14 solutions](./Solutions-Xtreme-14
+  - [IEEE Xtreme'14 solutions](./Solutions-Xtreme-14)
 - Feel free to add in your solutions too!
 
 ##### Some assets taken from [icons8.com](https://icons8.com/)
