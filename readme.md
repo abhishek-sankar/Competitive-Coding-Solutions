@@ -4,7 +4,7 @@
 - As of now, the repo consists of the following sections. Each section will have a readme with links to everything within it.
   - [Exercism Solutions](./Exercism/readme.md)
   - [HackerRank Solutions](./HackerRank/readme.md)
-  - [InterviewBit Solutions](./Interviewbit/readme.md)
+  - [InterviewBit Solutions](./Interviewbit/Readme.md)
   - [IEEE Xtreme'14 solutions](./Solutions-Xtreme-14)
 - Feel free to add in your solutions too!
 
