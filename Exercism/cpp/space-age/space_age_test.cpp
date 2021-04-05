@@ -21,7 +21,6 @@ TEST_CASE("age_in_earth_years")
     // numbers.
     REQUIRE(age.on_earth() == Approx(31.69).margin(accuracy));
 }
-
 TEST_CASE("age_in_mercury_years")
 {
     const space_age::space_age age(2134835688);
@@ -37,6 +36,7 @@ TEST_CASE("age_in_venus_years")
     REQUIRE(age.on_earth() == Approx(6.02).margin(accuracy));
     REQUIRE(age.on_venus() == Approx(9.78).margin(accuracy));
 }
+
 
 TEST_CASE("age_in_mars_years")
 {

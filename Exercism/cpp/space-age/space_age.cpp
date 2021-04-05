@@ -3,62 +3,55 @@
 using namespace std;
 namespace space_age
 {
+	space_age::space_age(float seconds): time(seconds) {}
 
 	float space_age::on_planet(string planet) const
 	{
-		return space_age_cache.at(planet);
-	}
+		if(space_age_cache.find(planet)!=space_age_cache.end()){
+			return space_age_cache.at(planet);
+		}else{
+			return calculate_age_on_planet(planet, time);
+		}
 
+	}
+	float space_age::calculate_age_on_planet(string planet, float time) const{
+		return time / 60 / 60 / 24 / 365.25 / multipliers.at(planet);
+	}
 	float space_age::on_mercury() const
 	{
-		string planet = "Mercury";
-		return on_planet(planet);
+		return on_planet("Mercury");
 	}
 	float space_age::on_venus() const
 	{
-		string planet = "Venus";
-		return on_planet(planet);
+		return on_planet("Venus");
 	}
 	float space_age::on_earth() const
 	{
-		string planet = "Earth";
-		return on_planet(planet);
+		return on_planet("Earth");
 	}
 	float space_age::on_mars() const
 	{
-		string planet = "Mars";
-		return on_planet(planet);
+		return on_planet("Mars");
 	}
 	float space_age::on_jupiter() const
 	{
-		string planet = "Jupiter";
-		return on_planet(planet);
+		return on_planet("Jupiter");
 	}
 	float space_age::on_saturn() const
 	{
-		string planet = "Saturn";
-		return on_planet(planet);
+		return on_planet("Saturn");
 	}
 	float space_age::on_uranus() const
 	{
-		string planet = "Uranus";
-		return on_planet(planet);
+		return on_planet("Uranus");
 	}
 	float space_age::on_neptune() const
 	{
-		string planet = "Neptune";
-		return on_planet(planet);
+		return on_planet("Neptune");
 	}
 	long space_age::seconds() const
 	{
 		return (long)time;
 	}
-	space_age::space_age(float seconds)
-	{
-		time = seconds;
-		for (auto planet : multipliers)
-		{
-			space_age_cache.insert({planet.first, time / 60 / 60 / 24 / 365.25 / multipliers.at(planet.first)});
-		}
-	}
+
 } // namespace space_age
