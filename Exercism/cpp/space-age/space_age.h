@@ -2,10 +2,13 @@
 #define SPACE_AGE_H
 #include "string"
 #include "map"
+#include "vector"
+#include "algorithm"
+#include "stdexcept"
 namespace space_age {
 	class space_age{
 		private:
-		std::map<std::string, float> multipliers{{"Mercury", 0.2408467}, {"Venus", 0.61519726}, {"Earth", 1.0}, {"Mars", 1.8808158}, {"Jupiter", 11.862615}, {"Saturn", 29.447498}, {"Uranus", 84.016846}, {"Neptune", 164.79132}};		
+		const std::map<std::string, float> multipliers{{"Mercury", 0.2408467}, {"Venus", 0.61519726}, {"Earth", 1.0}, {"Mars", 1.8808158}, {"Jupiter", 11.862615}, {"Saturn", 29.447498}, {"Uranus", 84.016846}, {"Neptune", 164.79132}};		
 		std::map<std::string, float> space_age_cache{};
 		public:
 		float time;
@@ -18,8 +21,7 @@ namespace space_age {
 		float on_saturn() const;
 		float on_uranus() const;
 		float on_neptune() const;
-		float on_planet(std::string planet, float time) const;
-		void insert_planet_age(std::string planet, float time) const;
+		float on_planet(std::string planet) const;
 		long seconds() const;
 	};
 }  // namespace space_age

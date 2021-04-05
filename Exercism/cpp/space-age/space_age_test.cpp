@@ -38,7 +38,6 @@ TEST_CASE("age_in_venus_years")
     REQUIRE(age.on_venus() == Approx(9.78).margin(accuracy));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("age_in_mars_years")
 {
     const space_age::space_age age(2329871239);
@@ -78,4 +77,5 @@ TEST_CASE("age_in_neptune_year")
     REQUIRE(age.on_earth() == Approx(260.16).margin(accuracy));
     REQUIRE(age.on_neptune() == Approx(1.58).margin(accuracy));
 }
+#if defined(EXERCISM_RUN_ALL_TESTS)
 #endif
