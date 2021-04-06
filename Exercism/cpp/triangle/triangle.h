@@ -1,6 +1,9 @@
 #if !defined(TRIANGLE_H)
 #define TRIANGLE_H
 #include "stdexcept"
+#include "array"
+#include "algorithm"
+#include "cstdlib"
 
 namespace triangle {
 	enum class flavor{
@@ -8,7 +11,7 @@ namespace triangle {
 		isosceles,
 		equilateral
 	};
-	flavor kind(float side_1, float side_2, float side_3);
+	flavor kind(double side_1, double side_2, double side_3);
 
 }  // namespace triangle
 
