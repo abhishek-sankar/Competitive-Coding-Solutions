@@ -7,12 +7,7 @@ namespace space_age
 
 	float space_age::on_planet(string planet) const
 	{
-		if(space_age_cache.find(planet)!=space_age_cache.end()){
-			return space_age_cache.at(planet);
-		}else{
-			return calculate_age_on_planet(planet, time);
-		}
-
+		return space_age_cache.at(planet);
 	}
 	float space_age::calculate_age_on_planet(string planet, float time) const{
 		return time / 60 / 60 / 24 / 365.25 / multipliers.at(planet);
@@ -54,4 +49,4 @@ namespace space_age
 		return (long)time;
 	}
 
-} // namespace space_age
+	} // namespace space_age
