@@ -1,9 +1,10 @@
 #if !defined(TRIANGLE_H)
 #define TRIANGLE_H
-#include "stdexcept"
-#include "array"
-#include "algorithm"
-#include "cstdlib"
+#include <stdexcept>
+#include <array>
+#include <algorithm>
+#include <cstdlib>
+#include <limits>
 
 namespace triangle {
 	enum class flavor{
