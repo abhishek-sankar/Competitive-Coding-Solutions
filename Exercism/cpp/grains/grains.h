@@ -1,10 +1,11 @@
 #if !defined(GRAINS_H)
 #define GRAINS_H
-#include <map>
+#include <vector>
+#include <numeric>
 
 namespace grains {
 	unsigned long long square(int square_id);
-	unsigned long long square_grain_count(unsigned square_id, std::map<int, unsigned long long> &chessboard);
+	std::vector<unsigned long long> find_all_grain_counts();
 	unsigned long long total();
 }  // namespace grains
 
