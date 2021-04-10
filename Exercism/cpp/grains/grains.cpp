@@ -3,25 +3,30 @@
 namespace grains {
 	// std::map<int, unsigned long long> chessboard;
 	unsigned long long square(int square_id){
-		unsigned long long res = 1;
-		while(--square_id){
-			res = res << 1;
-		}
-		return res;
+		return 1ULL << (square_id-1);
 	}
-	std::vector<unsigned long long> find_all_grain_counts(){
-		std::vector<unsigned long long> chessboard;
-		unsigned long long current_square_grains = 1;
-		int current_square = 1;
-		while(current_square < 65){
-			chessboard.push_back(current_square_grains);
-			current_square++;
-			current_square_grains = current_square_grains << 1;
-		}
-		return chessboard;
-	}
-	unsigned long long total(){
-		std::vector<unsigned long long> chessboard = find_all_grain_counts();
-		return std::accumulate(chessboard.begin(), chessboard.end(), 0);
+
+	uint64_t total(){
+		return -1;
 	}
 }  // namespace grains
+
+/*
+Reference:
+Other implementations of total()
+
+return 18'446'744'073'709'551'615;
+return 0xFFFF'FFFF'FFFF'FFFF;
+return (1ULL << 63) * 2 - 1;
+return (1ULL << 32 << 32) - 1;
+return (2ULL << 63) - 1;
+return UINT64_MAX;
+return std::numeric_limits<std::uint64_t>::max();
+return ~static_cast<std::uint64_t>(0);
+return static_cast<std::uint64_t>(-1);
+return std::bitset<64>().set().to_ullong();
+return 2 * square(64) - 1;
+
+https://stackoverflow.com/questions/4201301/warning-left-shift-count-width-of-type
+https://stackoverflow.com/questions/47391546/how-to-set-bits-in-byte-without-loop
+*/
